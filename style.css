@@ -1,0 +1,739 @@
+/*==================================================
+
+	Template Name: Creative Landing Page
+	Template URI: 
+	Author: Mohammad Romin
+	Author URI: https://romincomputer.blogspot.com/
+	Description: 
+	Version: 1.0
+	
+====================================================*/
+
+/* ======= CSS Document ========= */
+
+/************ TABLE OF CONTENTS ***************
+
+	01. Google Fonts
+	02. Default css
+	03. Section Area
+	04. Header Area 
+	05. Slider Area
+	06. Service Area
+	07. About Area
+	08. Portfolio Area
+	09. Count Area
+	10. Team Area
+	11. Testimonial Area
+	12. Blog Area 
+	13. Contact Area
+	14. Brand Area
+	15. Footer Area
+	16. Scroll Top Area
+
+***********************************************/
+
+/* ==================	
+	01. Google Fonts 
+=====================*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Poppins:wght@300;400;500;600&display=swap');
+
+/* ==================
+	02. Default css
+===================== */
+body {
+	overflow-x: hidden;
+	font-family: 'Poppins', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+}
+html, 
+body{
+	height: 100%;
+}
+a, 
+a:hover{
+	text-decoration: none;
+	transition: .3s;
+}
+ul {
+	padding-left: 0;
+	margin-bottom: 0;
+}
+li {
+	list-style: none;
+}
+/* Typography */
+p {
+	margin-bottom: 0;
+}
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6 {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+/* Spacing Short Codes */
+
+
+/* ==================	
+	03. Section Area 
+=====================*/
+
+/*======================== 
+	04. Header Area  
+==========================*/
+/* Logo */
+.header-area {
+    padding: 26px 0 0;
+}
+.logo a {
+    font-size: 24px;
+    line-height: 36px;
+    color: #fff;
+}
+.menu {
+    margin-top: 19px;
+    margin-left: 13%;
+}
+.menu ul {
+    margin: 0;
+    padding: 0;
+}
+.menu ul li,
+.social-media ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+.menu ul li a {
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: capitalize;
+    font-weight: 400;
+    color: #fff;
+}
+.menu ul li .active {
+    color: #D23E50;
+}
+.buy-btn {
+    float: right;
+    top: -37px;
+    position: relative;
+}
+.buy-btn a {
+    padding: 0 25px;
+    height: 46px;
+    display: inline-block;
+    line-height: 42px;
+    border: 2px solid #b1b4c1;
+    border-radius: 6px;
+    color: #c6c9d8;
+    font-size: 14px;
+    position: relative;
+    z-index: 2;
+}
+.buy-btn a:hover {
+    border-color: transparent;
+    -webkit-transform: translateY(-3px);
+    -ms-transform: translateY(-3px);
+    transform: translateY(-3px);
+    color: #ffffff;
+    border: 2px solid #f9004d;
+    background: #f9004d;
+    border-radius: 6px;
+}
+/*===================
+	05. Slider Area
+=====================*/
+.slider-area{
+    background-image: url("assets/images/bg-header.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+    height: 100vh;
+    padding: 200px 0;
+}
+.slider-area:before {
+    content: "";
+    position: absolute;
+    background-color: rgba(0,0,0,.6);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.slider-text {
+    text-align: center;
+}
+.slider-text h2 {
+    font-size: 100px;
+    line-height: 112px;
+    font-weight: 900;
+    background: linear-gradient(-259deg, #f81f01 0, #ee076e 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+	font-family: 'Montserrat', sans-serif;
+}
+.slider-text p{
+    font-size: 24px;
+    line-height: 40px;
+    color: #C6C9D8;
+	padding: 14px 123px 50px;
+}
+/* 
+.slider-text a {
+    color: #c6c9d8;
+    text-transform: uppercase;
+    border: 2px solid #b1b4c1;
+    padding: 15px 40px;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 6px;
+    letter-spacing: 2px;
+} */
+.btn {
+    color: #c6c9d8;
+    text-transform: uppercase;
+    border: 2px solid #b1b4c1;
+    padding: 15px 40px;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 6px;
+    letter-spacing: 2px;
+}
+.btn:hover {
+	border: 2px solid #f9004d;
+    background: #f9004d;
+    color: #ffffff;
+}
+
+/* 	===============
+	06. Services Area 
+===================*/
+.services-area {
+	padding: 125px 0;
+}
+.service-item{
+    background-color: #f6f6f6;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    padding: 60px 45px;
+}
+.service-item .icon{
+    color: #f9004d;
+    font-size: 40px;
+}
+.service-item h3{
+    font-size: 22px;
+    font-weight: 500;
+    margin: 20px 0;
+}
+.service-item p{
+    font-size: 18px;
+    line-height: 30px;
+    color: #1d1d24;
+}
+
+
+
+/* 	===============
+	07. About Area 
+===================*/
+.about-area{
+    background-color: #F8F9FC;
+    padding: 120px 0;
+}
+.about-text{}
+.about-text h3{
+    font-size: 60px;
+    line-height: 84px;
+    font-weight: 700;
+    color: #1F1F25;
+}
+.about-text p{
+    font-size: 18px;
+    line-height: 30px;
+    color: #717173;
+    margin: 5px 0 44px;
+}
+.about-item {
+    width: 50%;
+    float: left;
+}
+.about-item h4{
+    font-size: 30px;
+    line-height: 42px;
+    color: #1F1F25;
+}
+.about-item p{
+    font-size: 18px;
+    line-height: 30px;
+    color: #1D1D24;
+}
+
+
+
+
+
+/*=====================
+	08. Portfolio Area 
+=======================*/
+.portfolio-area{
+	padding: 135px 0;
+}
+.section-title{
+    margin-bottom: 70px;
+}
+.section-title h2{
+    font-size: 60px;
+    line-height: 84px;
+    font-weight: 700;
+    color: #1F1F25;
+}
+.section-title p{
+    font-size: 18px;
+    line-height: 30px;
+    color: #1D1D24;
+}
+.portfolio-item{
+    position: relative;
+	transition: .3s;
+}
+.portfolio-item:before {
+    position: absolute;
+    content: "";
+    background-color: #0a0a0a;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: .6;
+}
+.portfolio-item img{}
+.portfolio-item span{
+    line-height: 30px;
+    color: #C6C9D8;
+}
+.portfolio-item h4{
+    font-size: 24px;
+    line-height: 36px;
+    color: #fff;
+    margin: 14px 0 31px;
+}
+.portfolio-text {
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+    right: 40px;
+}
+.portfolio-item a {
+    padding: 0 23px;
+    height: 40px;
+    display: inline-block;
+    line-height: 34px;
+    border: 2px solid #b1b4c1;
+    border-radius: 4px;
+    font-size: 14px;
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    letter-spacing: 0.2px;
+    text-transform: uppercase;
+}
+.portfolio-item a:hover {
+	border: 2px solid #f9004d;
+    -webkit-transform: translateY(-3px);
+    -ms-transform: translateY(-3px);
+    transform: translateY(-3px);
+    color: #fff;
+    background-color: #f9004d;
+}
+.portfolio-item:hover {
+    -webkit-transform: scale(1.08) translateZ(0);
+    transform: scale(1.08) translateZ(0);
+	transition: .3s;
+}
+/*====================
+	09. Count Area
+======================*/
+.count-area{
+    background-color: #F8F9FC;
+    padding: 105px 0 130px;
+}
+.count-text{}
+.count-text h3{
+    font-size: 36px;
+    line-height: 26px;
+    color: #1F1F25;
+}
+.count-item {}
+.count-item h4 {
+    color: #F9004D;
+    font-size: 72px;
+    line-height: 80px;
+    font-weight: 600;
+    position: relative;
+    display: inline-block;
+    margin: 55px 0 18px;
+}
+.count-item h4:before {
+    position: absolute;
+    content: "+";
+    color: #f9004d;
+    right: -26px;
+    top: -17px;
+    font-size: 40px;
+}
+.count-item p{
+    font-size: 18px;
+    line-height: 30px;
+    color: #1D1D24;
+}
+
+/*================ 	
+	10. Team Area 
+==================*/
+.team-area{
+	padding: 130px 0 120px;
+}
+.team-item{
+	margin-bottom: 30px;
+}
+.team-img{}
+.social-media{
+	display: none;
+}
+.social-media ul{}
+.social-media ul li{}
+.social-media ul li a{}
+.team-info{
+	display: none;
+}
+.team-info h4{}
+.team-info span{}
+
+
+/*====================== 
+	11. Testimonial Area 
+========================*/
+.testimonial-area{
+    background-color: #F8F9FC;
+    padding: 125px 0;
+}
+.testimonial-text{}
+.testimonial-text p{
+    font-size: 36px;
+    line-height: 58px;
+    color: #18181B;
+    font-weight: 500;
+}
+.testimonial-text h5 {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #18181B;
+    font-weight: 300;
+    margin: 74px 0 62px;
+}
+.testimonial-text h5 span{
+    color: #8C8C8C;
+}
+.testimonial-img{}
+.testimonial-img ul {}
+.testimonial-img ul li {
+    display: inline-block;
+    padding: 0 15px;
+    margin-bottom: 30px;
+}
+.testimonial-img ul li a{}
+
+
+
+/*===================
+	12. Blog Area
+=====================*/
+.blog-area{
+	padding: 130px 0;
+}
+.blog-item{
+    position: relative;
+    overflow: hidden;
+}
+.blog-item span{
+    color: #c6c9d8;
+}
+.blog-item h4{
+    color: #fff;
+    margin: 13px 0 30px;
+}
+.blog-item a{}
+.blog-item a {
+    padding: 0 23px;
+    height: 40px;
+    display: inline-block;
+    line-height: 34px;
+    border: 2px solid #f9004d;
+    border-radius: 4px;
+    font-size: 14px;
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    letter-spacing: 0.2px;
+    text-transform: uppercase;
+}
+.blog-item a:hover {
+    border: 2px solid #f9004d;
+    -webkit-transform: translateY(-3px);
+    -ms-transform: translateY(-3px);
+    transform: translateY(-3px);
+    color: #ffffff;
+    background: #f9004d;
+}
+.blog-item:hover .blog-text {
+    bottom: 0;
+}
+.blog-item .blog-text {
+    position: absolute;
+    bottom: -92px;
+    width: 100%;
+    padding: 50px 35px;
+    z-index: 3;
+    transition: .3s;
+}
+.blog-text::before {
+    position: absolute;
+    content: "";
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0)), color-stop(70%, #000000));
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0, #000000 70%);
+    background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0, #000000 70%);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, #000000 70%);
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    z-index: -1;
+}
+/* .blog-btn {
+    margin-top: 35px;
+    -webkit-transition: 0.7s;
+    -o-transition: 0.7s;
+    transition: 0.7s;
+    opacity: 0;
+    visibility: hidden;
+} */
+/* ====================
+	13. Contact Area
+======================= */
+.contact-area{
+    background-color: #F8F9FC;
+    padding: 130px 0 125px;
+}
+.contact-form{}
+
+.contact-form {
+  display: block;
+  margin-bottom: 0;
+}
+
+.contact-form input,
+.contact-form textarea {
+  display: block;
+  width: 100%;
+  padding: 0 20px;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  height: 50px;
+  line-height: 46px;
+  margin-bottom: 20px;
+  outline: none;
+  color: #1f1f25;
+  font-size: 15px;
+  letter-spacing: 0.1px;
+  background-color: transparent;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #f9004d;
+}
+
+.contact-form textarea {
+  height: 120px;
+}
+
+
+
+
+/* ====================
+	14. Brand Area
+======================= */
+.brand-area{
+    padding-top: 60px;
+    padding-bottom: 200px;
+}
+.brand-img ul li a img{
+    max-width: 150px;
+    max-height: 110px;
+    opacity: .7;
+    transition: .3s;
+}
+.brand-img ul{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+.brand-img ul li {
+    padding: 25px;
+    display: inline-block;
+}
+.brand-img ul li a{}
+.brand-img ul li a img:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+/*======================	
+	15. Footer Area 
+========================*/
+.footer-area{}
+.footer-left{}
+.footer-left {
+    background: -webkit-linear-gradient(305deg, #f81f01 0%, #ee076e 100%);
+    background: -o-linear-gradient(305deg, #f81f01 0%, #ee076e 100%);
+    background: linear-gradient(145deg, #f81f01 0%, #ee076e 100%);
+    padding: 120px 120px;
+    position: relative;
+    margin-right: -15px;
+    border-top-right-radius: 6px;
+    color: #fff;
+    z-index: 999;
+}
+.footer-left::before {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-image: url(assets/images/pattern-1.png);
+    content: "";
+    z-index: -1;
+    opacity: 0.5;
+    border-top-right-radius: 6px;
+}
+.footer-left span{
+    font-size: 15px;
+    line-height: 26px;
+    letter-spacing: 4px;
+}
+.footer-left h2{
+    font-size: 75px;
+    line-height: 90px;
+    font-weight: 900;
+	font-family: 'Montserrat', sans-serif;
+}
+.footer-left a {
+    color: #c6c9d8;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border: 2px solid #b1b4c1;
+    padding: 15px 40px;
+    border-radius: 6px;
+    display: inline-block;
+    font-weight: 500;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+	margin-top: 30px;
+}
+.footer-left a:hover {
+    background: #fff;
+    border-color: #fff;
+    color: #f9004d;
+}
+
+.footer-right{
+    background-image: url("assets/images/bg-image-8.jpg");
+    background-size: cover;
+	padding: 170px 70px 50px;
+	margin-top: 68px;
+}
+.footer-list{
+	    width: 50%;
+	    float: left;
+	    margin-bottom: 42px;
+}
+.footer-list h5{
+    font-size: 20px;
+    line-height: 28px;
+    color: #C6C9D8;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+.footer-list ul{}
+.footer-list ul li{
+    font-size: 16px;
+    color: #C6C9D8;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+.footer-social li{
+    display: inline-block;
+}
+.footer-list ul li a{
+    color: #C6C9D8;
+	text-transform: capitalize;
+}
+.copyright{}
+.copyright p{
+    line-height: 30px;
+    color: #C6C9D8;
+}
+
+
+/*======================= 
+	16. scroll Top Area 
+========================*/
+.scroll {
+    width: 50px;
+    height: 50px;
+    background-color: #ffffff;
+    color: #f9004d;
+    right: 20px;
+    bottom: 60px;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 50px;
+    z-index: 9811 !important;
+    -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    cursor: pointer;
+}
+.scroll i {
+  display: block;
+  line-height: 48px;
+  font-size: 22px;
+  font-weight: 600;
+}
